@@ -33,7 +33,7 @@ public class CalculadoraTeste {
     }
 
     @Test
-    public void testDivisao() {
+    public void testDivisao() throws IllegalAccessException {
         Calculadora calculadora = new Calculadora();
         int resultado = calculadora.divisao(6, 3);
         assertEquals(2 , resultado);

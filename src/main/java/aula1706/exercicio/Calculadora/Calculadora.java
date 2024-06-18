@@ -14,7 +14,10 @@ public class Calculadora {
         return a * b;
     }
 
-    public int divisao(int a, int b) {
+    public int divisao(int a, int b) throws IllegalAccessException {
+        if (b == 0) {
+            throw new IllegalAccessException("Variável b não pode receber 0");
+        }
         return a / b;
     }
 }
